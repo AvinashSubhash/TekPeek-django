@@ -1,0 +1,42 @@
+.topbar
+{
+    width:100.7%;
+    height:100px;
+    background-color:darkgray;
+    color:black;
+    float:left;
+    margin-left:-8px;
+    margin-top:-8px;
+    text-align:center;
+}
+.menu-topbar
+{
+    margin-left:33%;
+}
+li
+{
+    float:left;
+    margin:0px 35px;
+    list-style-type: none;
+    font-size: 40px;
+}
+.bar_two
+{
+    height:470px;
+    background-color:black;
+    margin-left:-8px;
+    width:100.7%;
+}
+video
+{
+    background-color:black;
+    width:30.7%;
+    margin-left:-8px;
+}    
+.wallpaper
+{
+    width:100.7%;
+    margin-left:-8px;
+    height:300px;
+    background-image:url("wallpaper1.png");
+}
