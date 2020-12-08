@@ -1,42 +1,62 @@
 .topbar
 {
     width:100.7%;
-    height:100px;
-    background-color:darkgray;
+    height:80px;
+    background-color:whitesmoke;
     color:black;
     float:left;
     margin-left:-8px;
     margin-top:-8px;
-    text-align:center;
 }
-.menu-topbar
+
+.top-button
 {
-    margin-left:33%;
+    width:160px;
+    height:64px;
+    background-color:rgb(54, 56, 54);
+    margin-left:91.8%;
+    margin-top:-3%;
+    border-radius:20px;
+    transition-duration: 0.5s;
+}
+.top-button:hover
+{
+    border-radius:35px;
+    transition-duration: 0.5s;
 }
 li
 {
     float:left;
     margin:0px 35px;
     list-style-type: none;
-    font-size: 40px;
+    font-size: 30px;
+    padding:5px 10px;
+    opacity:0.7;
+    transition-duration: 0.5s;
 }
-.bar_two
+li:hover
 {
-    height:470px;
-    background-color:black;
-    margin-left:-8px;
-    width:100.7%;
+    opacity:0.6;
+    background-color: darkgray;
+    border-radius:25px;
+    cursor: pointer;
+    transition-duration: 0.5s;
 }
-video
-{
-    background-color:black;
-    width:30.7%;
-    margin-left:-8px;
-}    
+
+    
 .wallpaper
 {
     width:100.7%;
     margin-left:-8px;
-    height:300px;
-    background-image:url("wallpaper1.png");
+    height:893px;
+    background-image:url("wallpaper1.jpg");
+    opacity:1;
+    z-index: 1;
+}
+.logo
+{
+    z-index:2;
+    opacity:1;
+    margin-left:43%;
+    margin-top:-20px;
 }
