@@ -53,12 +53,12 @@ li:hover
     
 .wallpaper
 {
-    width:99.8vw;
+    width:100vw;
     margin-left:-0.4vw;
     background-image:url("wallpaper1.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    height:44.73vw;
+    height:45vw;
     opacity:1;
     z-index: 1;
     margin-top:0vw;
@@ -81,4 +81,58 @@ body
 ul
 {
     margin:1vw 0vw;
+}
+.left-bottle1
+{
+    width:42vw;
+    height:10vw;
+    border:0.1vw solid whitesmoke;
+    margin-top:-37vw;
+    margin-left:4vw;
+    border-radius:3.5vw;
+    background-color:lightgrey;
+    opacity:0.6;
+    z-index:3;
+
+}
+.left-bottle2
+{
+    width:42vw;
+    height:19vw;
+    border:0.1vw solid whitesmoke;
+    border-radius:3.5vw;
+    margin-left:4vw;
+    margin-top:2.5vw;
+    background-color:lightgrey;
+    opacity:0.6;
+    z-index:3;
+}
+.right-bottle
+{
+    width:42vw;
+    height:32vw;
+    border:0.1vw solid whitesmoke;
+    border-radius:3.5vw;
+    margin-left:52vw;
+    margin-top:-32vw;
+    background-color:lightgrey;
+    opacity:0.6;
+    z-index:3;
+}
+.leftbottle1-text
+{
+    
+    text-align: center;
+    z-index:40;
+    font-size: 2vw;
+    margin-top:-29.4vw;
+    margin-left:-72vw;
+    position:relative;
+}
+.powerpass
+{
+    height:4vw;
+    border-radius: 1vw;
+    z-index:40;
+    cursor: pointer;
 }
