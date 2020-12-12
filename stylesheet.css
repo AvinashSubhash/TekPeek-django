@@ -1,6 +1,6 @@
 .topbar
 {
-    width:99.8vw;
+    width:100vw;
     height:4vw;
 
     background-color:whitesmoke;
@@ -13,16 +13,19 @@
 }
 .menu-topbar
 {
-    margin:0vw -3vw;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 .top-button
 {
-    width:7vw;
+    width:10vw;
     height:3vw;
-    background-color:rgb(54, 56, 54);
-    margin-left:90.9vw;
+    background-color:rgb(86, 87, 86);
+    margin-left:88.9vw;
     margin-top:-3.2vw;
-
+    text-align:center;
+    color:white;
+    font-size:0.9vw;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     border-radius:20px;
     transition-duration: 0.5s;
 }
@@ -41,6 +44,11 @@ li
     opacity:0.7;
     transition-duration: 0.5s;
 }
+a
+{
+    text-decoration: none;
+    color:black;
+}
 li:hover
 {
     opacity:0.6;
@@ -53,12 +61,12 @@ li:hover
     
 .wallpaper
 {
-    width:100vw;
+    width:100.4vw;
     margin-left:-0.4vw;
     background-image:url("wallpaper1.jpg");
     background-size:cover;
     background-repeat: no-repeat;
-    height:45vw;
+    height:46.35vw;
     opacity:1;
     z-index: 1;
     margin-top:0vw;
@@ -93,7 +101,13 @@ ul
     background-color:lightgrey;
     opacity:0.6;
     z-index:3;
+    transition-duration: 0.5s;
 
+}
+.left-bottle1:hover, .left-bottle2:hover, .right-bottle:hover
+{
+    opacity:0.4;
+    transition-duration: 0.5s;
 }
 .left-bottle2
 {
@@ -102,10 +116,11 @@ ul
     border:0.1vw solid whitesmoke;
     border-radius:3.5vw;
     margin-left:4vw;
-    margin-top:2.5vw;
+    margin-top:3.4vw;
     background-color:lightgrey;
     opacity:0.6;
     z-index:3;
+    transition-duration: 0.5s;
 }
 .right-bottle
 {
@@ -118,6 +133,7 @@ ul
     background-color:lightgrey;
     opacity:0.6;
     z-index:3;
+    transition-duration: 0.5s;
 }
 .leftbottle1-text
 {
@@ -134,5 +150,27 @@ ul
     height:4vw;
     border-radius: 1vw;
     z-index:40;
+    margin-top:-0.5vw;
     cursor: pointer;
+}
+.highlight
+{
+    margin-top:-10.4vw;
+    margin-left:20vw;
+    font-size:2vw;
+    color:white;
+}
+.news
+{
+    margin-top:-3.5vw;
+    margin-left:66vw;
+    font-size:2vw;
+    color:white;
+}
+.construction
+{
+    margin-left:18.5vw;
+    margin-top:10.6vw;
+    font-size:2vw;
+    color:white;
 }
