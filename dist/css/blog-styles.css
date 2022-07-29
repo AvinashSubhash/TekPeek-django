@@ -11309,4 +11309,7 @@ textarea.form-control-lg {
 .headwall {
   --bs-bg-opacity: 1;
   background-image: url("https://wallpapercave.com/wp/wp3477365.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
