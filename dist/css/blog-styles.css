@@ -11299,8 +11299,14 @@ textarea.form-control-lg {
  font-weight: 800;
  font-family:Verdana, Geneva, Tahoma, sans-serif;
  padding-bottom: 2%;
+ font-size:200%;
 }
 .about {
   color: whitesmoke;
   padding-bottom: 7%;
+}
+
+.headwall {
+  --bs-bg-opacity: 1;
+  background-image: url("https://wallpapercave.com/wp/wp3477365.jpg");
 }
