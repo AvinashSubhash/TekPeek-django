@@ -11699,3 +11699,12 @@ body {
 .footer {
   padding: 1rem 0;
 }
+
+@media (max-width: 989px) {
+  .img-fluid {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+}
