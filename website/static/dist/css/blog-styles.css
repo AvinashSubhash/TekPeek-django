@@ -6977,6 +6977,10 @@ textarea.form-control-lg {
   height: 25% !important;
 }
 
+.h-10 {
+  height: 10% !important;
+}
+
 .h-50 {
   height: 50% !important;
 }
