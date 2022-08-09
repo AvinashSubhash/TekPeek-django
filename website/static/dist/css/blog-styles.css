@@ -11318,11 +11318,4 @@ textarea.form-control-lg {
   background-position: center center;
 }
 
-@media (min-width) {
-  
-}.bg-grey {
-  padding-top: 5%;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color:rgba(230, 245, 220, 1);
-}
+
