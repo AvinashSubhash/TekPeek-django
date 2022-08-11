@@ -11346,4 +11346,9 @@ textarea.form-control-lg {
   }
 }
 
+hr.rounded {
+  border-top: 8px solid #bbb;
+  text-align: center;
+}
+
 
