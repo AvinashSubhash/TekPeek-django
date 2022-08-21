@@ -11246,3 +11246,6 @@ header.masthead .site-heading .h1 {
     font-size: 2.25rem;
   }
 }
+.footer-block {
+  background-color: #0d6efd !important;
+}
