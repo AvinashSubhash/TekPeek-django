@@ -5,9 +5,11 @@ from . import models
 
 # Create your views here.
 def tekpeek(request):
+    collected_data = models.Data.objects.all()
+    collected_data = models.Data.objects.all()
     html_page = loader.get_template('blog-page.html')
     print("Database contains: ")
-    return HttpResponse(html_page.render())
+    return HttpResponse(html_page.render({'data': collected_data}))
 
 def blog_template(request):
     collected_data = models.Data.objects.all()

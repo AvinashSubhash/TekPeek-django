@@ -106,27 +106,21 @@
                 <div class="col-lg-8">
                     <!-- Featured blog post-->
                     <!-- Please use the featured templates here :-) -->
+                    <div class="carousel"><h1><b>Blogs</b></h2>
+                        <br><br>
+                    </div>
+                    {% for row in data %}
                     <div class="card mb-4">
                         <a href="test/" style="text-decoration:none; color:black;"><img class="card-img-top" src="{% static 'dist/assets/img/tekpeek.jpg' %}" alt="..." />
                         <div class="card-body">
-                            <div class="small text-muted">July 29, 2022</div>
-                            <h2 class="card-title">Launching soon!</h2>
-                            <p class="card-text">TekPeek will be launching soon. Stay tuned ;-)</p>
+                            <div class="small text-muted">{{row.blog_date}}</div>
+                            <h2 class="card-title">{{ row.blog_title }}</h2>
+                            <p class="card-text">{{ row.blog_short }}</p>
                             
                         </div>
                         </a>
                     </div>
-
-                    <div class="card mb-4">
-                        <a href="test/" style="text-decoration:none; color:black;"><img class="card-img-top" src="{% static 'dist/assets/img/tekpeek.jpg' %}" alt="..." />
-                        <div class="card-body">
-                            <div class="small text-muted">July 29, 2022</div>
-                            <h2 class="card-title">Launching soon!</h2>
-                            <p class="card-text">TekPeek will be launching soon. Stay tuned ;-)</p>
-                            <!--<a class="btn btn-primary" href="#!">Read more →</a>-->
-                        </div>
-                    </a>
-                    </div>
+                    {% endfor %}
                     
                     <!-- Nested row for non-featured blog posts-->
 

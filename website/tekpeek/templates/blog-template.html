@@ -75,20 +75,13 @@
                         <p>As I stand out here in the wonders of the unknown at Hadley, I sort of realize there’s a fundamental truth to our nature, Man must explore, and this is exploration at its greatest.</p>
                         -->
                         {% for i in data %}
+                        <h1>{{i.blog_title}}</h1>
                         <p>
-                            Blog Content : {{i.blog_content}}
+                            {{i.blog_content}}
                         </p>
-
-                        <p>
-                            Blog ID : {{i.blog_id}}
-                            </p>
+                        <p> Date: {{i.blog_date}}</p>
+                        <p> by - {{i.blog_auth}}</p>
                             {% endfor %}
-                        <p>
-                            Placeholder text by
-                            <a href="http://spaceipsum.com/">Space Ipsum</a>
-                            &middot; Images by
-                            <a href="https://www.flickr.com/photos/nasacommons/">NASA on The Commons</a>
-                        </p>
                     </div>
                 </div>
             </div>
@@ -135,3 +128,4 @@
         <script src="{% static 'dist/js/scripts.js' %}"></script>
     </body>
 </html>
+ 
