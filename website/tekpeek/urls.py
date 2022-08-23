@@ -3,5 +3,5 @@ from . import views
 
 urlpatterns = [
     path('',views.tekpeek,name='tekpeek'),
-    path('test/',views.blog_template,name="blog-template")
+    path('blogs/<int:id>',views.blog_template,name="blog-template")
 ]
