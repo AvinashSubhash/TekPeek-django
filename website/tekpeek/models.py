@@ -8,3 +8,8 @@ class Data(models.Model):
     blog_date = models.TextField(max_length=11)
     blog_auth = models.TextField()
     blog_image = models.TextField()
+
+class News(models.Model):
+    image_link = models.TextField(max_length=1000)
+    news_title = models.TextField(max_length=300)
+    news_short = models.TextField(max_length=300)

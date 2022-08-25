@@ -6,10 +6,11 @@ from . import models
 # Create your views here.
 def tekpeek(request):
     collected_data = models.Data.objects.all()
-    #collected_data = models.Data.objects.all()
+    news_data = models.News.objects.all()
     html_page = loader.get_template('blog-page.html')
+    print(len(news_data))
     print("Database contains: ")
-    return HttpResponse(html_page.render({'data': collected_data}))
+    return HttpResponse(html_page.render({'data': collected_data,'news':news_data}))
 
 def blog_template(request,id):
     collected_data = models.Data.objects.all()
