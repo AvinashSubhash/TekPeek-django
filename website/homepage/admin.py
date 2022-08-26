@@ -1,5 +1,5 @@
 from django.contrib import admin
-from tekpeek.models import Data,News
+from tekpeek.models import Data,News, Highlight
 admin.site.site_header = "TekPeek Admin Page"
 admin.site.index_title = "TekPeek Admin"
 admin.site.site_title = "Avinash"
@@ -13,4 +13,8 @@ class DataAdmin(admin.ModelAdmin):
 
 @admin.register(News)
 class NewsAdmin(admin.ModelAdmin):
+    pass
+
+@admin.register(Highlight)
+class HighlightAdmin(admin.ModelAdmin):
     pass

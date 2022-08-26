@@ -13,3 +13,8 @@ class News(models.Model):
     image_link = models.TextField(max_length=1000)
     news_title = models.TextField(max_length=300)
     news_short = models.TextField(max_length=300)
+
+class Highlight(models.Model):
+    highlight_title = models.TextField(max_length=200)
+    highlight_content = models.TextField(max_length=65535)
+    highlight_image = models.ImageField(upload_to='static/dist/assets/img/')

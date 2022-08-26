@@ -12,8 +12,8 @@
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="{% static 'dist/css/blog-styles.css' %}" rel="stylesheet" />
         <!-- Material Design Bootstrap-->
-        <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"/>
-        --></head>
+        <script src="https://use.fontawesome.com/releases/v6.1.0/js/all.js" crossorigin="anonymous"></script>
+        </head>
     <body>
         <!-- Responsive navbar-->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -49,6 +49,17 @@
             <p>Tech blogs about the latest events around us.</p>
           </div>
       </div>
+      {% for news_row in high %}
+      <div class="carousel-item">
+        <img src="{{news_row.highlight_image.url}}" class="d-block w-100" alt="Camera"/>
+        <div class="carousel-caption text-dark">
+            <b>
+            <h5>{{news_row.highlight_title}}</h5>
+            <p>{{news_row.highlight_content}}</p>
+        </b>
+      </div>
+      </div>
+      {% endfor %}
       {% for news_row in news %}
       <div class="carousel-item">
         <img src="{% static  news_row.image_link %}" class="d-block w-100" alt="Camera"/>
@@ -144,6 +155,40 @@
                     An Initiative by a final-year engineering student to get to know about the tech world. Discover blogs that discuss the latest technology stuff.
                     <br><br>
                     Interested in submitting your articles to tekpeek ? Reach me out <a href="../#contact" class="text-decoration-none text-muted"><b>here</b></a>
+                </div>
+                <hr class="my-5 carousel" style="width:100%; margin:auto; height: 2px; color: #000000">
+                
+                <div class="container px-4 px-lg-5">
+                    <div class="row gx-4 gx-lg-5 justify-content-center">
+                        <div class="col-md-10 col-lg-8 col-xl-7">
+                            <ul class="list-inline text-center">
+                                <li class="list-inline-item">
+                                    <a href="https://www.instagram.com/kingaiva">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fab fa-instagram fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://www.linkedin.com/in/avinash-s-07551a1a0/">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fab fa-linkedin-in fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a href="https://github.com/AvinashSubhash">
+                                        <span class="fa-stack fa-lg">
+                                            <i class="fas fa-circle fa-stack-2x"></i>
+                                            <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+                                        </span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <p class="m-0 text-center text-white">&copy Copyright-free, take it if you like it ;-) - 2022</p>
             
