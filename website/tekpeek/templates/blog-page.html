@@ -54,19 +54,17 @@
         <img src="{{news_row.highlight_image.url}}" class="d-block w-100" alt="Camera"/>
         <div class="text-dark text-center bg-light carousel-caption rounded">
             <b>
-            <h5>{{news_row.highlight_title}}</h5>
-            <p>{{news_row.highlight_content}}</p>
+            <h6>{{news_row.highlight_title}}</h6>
         </b>
       </div>
       </div>
       {% endfor %}
       {% for news_row in news %}
-      <div class="carousel-item">
+      <div class="carousel-item news-text">
         <img src="{{news_row.image_link.url }}" class="d-block w-100" alt="Camera"/>
         <div class="text-dark text-center bg-light carousel-caption rounded">
             <b>
-            <h5>{{news_row.news_title}}</h5>
-            <p>{{news_row.news_short}}</p>
+            <h6>{{news_row.news_title}}</h6>
         </b>
       </div>
       </div>
