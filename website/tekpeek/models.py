@@ -7,10 +7,10 @@ class Data(models.Model):
     blog_short = models.TextField(max_length=255)
     blog_date = models.TextField(max_length=11)
     blog_auth = models.TextField()
-    blog_image = models.TextField()
+    blog_image = models.ImageField(upload_to='static/dist/assets/img/')
 
 class News(models.Model):
-    image_link = models.TextField(max_length=1000)
+    image_link = models.ImageField(upload_to='static/dist/assets/img/')
     news_title = models.TextField(max_length=300)
     news_short = models.TextField(max_length=300)
 
