@@ -51,7 +51,7 @@
       </div>
       {% for news_row in high %}
       <div class="carousel-item">
-        <img src="{{news_row.highlight_image.url}}" class="d-block w-100" alt="Camera"/>
+        <img src="../{{news_row.highlight_image.url}}" class="d-block w-100" alt="Camera"/>
         <div class="text-dark text-center bg-light carousel-caption rounded">
             <b>
             <h6>{{news_row.highlight_title}}</h6>
@@ -61,7 +61,7 @@
       {% endfor %}
       {% for news_row in news %}
       <div class="carousel-item news-text">
-        <img src="{{news_row.image_link.url }}" class="d-block w-100" alt="Camera"/>
+        <img src="../{{news_row.image_link.url }}" class="d-block w-100" alt="Camera"/>
         <div class="text-dark text-center bg-light carousel-caption rounded">
             <b>
             <h6>{{news_row.news_title}}</h6>
@@ -91,7 +91,7 @@
                                     {% for widg in high %}
                                     <div class="card mb-4 side-widgets">
                                         <div class="card-header"><b>{{widg.highlight_title}}</b></div>
-                                        <img class = "card-img-top" src="{{widg.highlight_image.url}}">
+                                        <img class = "card-img-top" src="../{{widg.highlight_image.url}}">
                                         <div class="card-body">
                                             {{widg.highlight_content}}</div>
                                     </div>
@@ -106,7 +106,7 @@
                                                 {% for news_row in news %}
                                                 <div class="card mb-2 bg-grey">
                                                     <br>
-                                                    <img class="card-img-top" src="{{news_row.image_link.url}}">
+                                                    <img class="card-img-top" src="../{{news_row.image_link.url}}">
                                                     <div class="card-body"><b>{{news_row.news_title}}</b></div>
                                                 </div>
                                                 {% endfor %}
@@ -126,7 +126,7 @@
                     </div>
                     {% for row in data %}
                     <div class="card mb-4">
-                        <a href="blogs/{{row.id}}" style="text-decoration:none; color:black;"><img class="card-img-top" src="{{row.blog_image.url}}" alt="..." />
+                        <a href="blogs/{{row.id}}" style="text-decoration:none; color:black;"><img class="card-img-top" src="../{{row.blog_image.url}}" alt="..." />
                         <div class="card-body">
                             <div class="small text-muted">{{row.blog_date}}</div>
                             <h2 class="card-title">{{ row.blog_title }}</h2>
