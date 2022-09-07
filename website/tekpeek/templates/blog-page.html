@@ -51,22 +51,24 @@
       </div>
       {% for news_row in high %}
       <div class="carousel-item">
-        <img src="../{{news_row.highlight_image.url}}" class="d-block w-100" alt="Camera"/>
+        <a href={{news_row.highlight_link}}><img src="../{{news_row.highlight_image.url}}" class="d-block w-100" alt="Camera"/>
         <div class="text-dark text-center bg-light carousel-caption rounded">
             <b>
             <h6>{{news_row.highlight_title}}</h6>
         </b>
       </div>
+    </a>
       </div>
       {% endfor %}
       {% for news_row in news %}
       <div class="carousel-item news-text">
-        <img src="../{{news_row.image_link.url }}" class="d-block w-100" alt="Camera"/>
+        <a href={{news_row.news_link}}><img src="../{{news_row.image_link.url }}" class="d-block w-100" alt="Camera"/>
         <div class="text-dark text-center bg-light carousel-caption rounded">
             <b>
             <h6>{{news_row.news_title}}</h6>
         </b>
       </div>
+    </a>
       </div>
       {% endfor %}
     </div>
@@ -90,10 +92,11 @@
                                     <!-- Side widget-->
                                     {% for widg in high %}
                                     <div class="card mb-4 side-widgets">
-                                        <div class="card-header"><b>{{widg.highlight_title}}</b></div>
+                                        <a href={{widg.highlight_link}} class="text-decoration-none text-dark"><div class="card-header"><b>{{widg.highlight_title}}</b></div>
                                         <img class = "card-img-top" src="../{{widg.highlight_image.url}}">
                                         <div class="card-body">
                                             {{widg.highlight_content}}</div>
+                                        </a>
                                     </div>
                                     {% endfor %}
                                     <br><br>
@@ -106,8 +109,9 @@
                                                 {% for news_row in news %}
                                                 <div class="card mb-2 bg-grey">
                                                     <br>
-                                                    <img class="card-img-top" src="../{{news_row.image_link.url}}">
+                                                    <a href={{news_row.news_link}} class="text-decoration-none text-dark"><img class="card-img-top" src="../{{news_row.image_link.url}}">
                                                     <div class="card-body"><b>{{news_row.news_title}}</b></div>
+                                                    </a>
                                                 </div>
                                                 {% endfor %}
                                             
